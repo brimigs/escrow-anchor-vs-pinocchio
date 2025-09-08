@@ -1,0 +1,5 @@
+[build]
+# Don't set a default target for local development
+
+[unstable]
+build-std = ["core", "alloc"]
