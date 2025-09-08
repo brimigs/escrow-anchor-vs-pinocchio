@@ -47,8 +47,9 @@ node_modules/
 coverage/
 *.lcov
 
-# Cargo lock files (optional - some projects commit this)
-# Cargo.lock
+# Cargo lock files
+Cargo.lock
+**/Cargo.lock
 
 # Backup files
 *.bak
