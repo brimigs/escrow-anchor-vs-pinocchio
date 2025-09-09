@@ -88,7 +88,7 @@ impl<'info> Refund<'info> {
     }
 }
 
-pub fn handler(ctx: Context<Refund>) -> Result<()> {
+pub fn refund_handler(ctx: Context<Refund>) -> Result<()> {
     ctx.accounts.withdraw_and_close_vault()?;
 
     Ok(())

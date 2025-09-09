@@ -80,7 +80,7 @@ impl<'info> Make<'info> {
     }
 }
 
-pub fn handler(ctx: Context<Make>, seed: u64, receive: u64, amount: u64) -> Result<()> {
+pub fn make_handler(ctx: Context<Make>, seed: u64, receive: u64, amount: u64) -> Result<()> {
     require_gt!(receive, 0, EscrowError::InvalidAmount);
     require_gt!(amount, 0, EscrowError::InvalidAmount);
 
